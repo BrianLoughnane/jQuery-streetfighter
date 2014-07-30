@@ -17,6 +17,10 @@
 			<div class="ryu-ready"></div>
 			<div class="ryu-throwing"></div>
 		</div>
+		
+		<audio id="hadouken-sound" src="sound/hadouken.mp3">
+			
+		</audio>
 
 		<div class="hadouken">
 				
@@ -26,31 +30,5 @@
 
 </body>
 
-<!-- Psuedo Code: -->
-<!-- 
-The page loads, we see Ryu standing still. 
-
-
-Hover: We should listen for mouseenter and mouseleave events on Ryu, and move him into and out of his ready position accordingly.  we should be able to simply hide() whichever image is currently displayed, and then .show() the right one
-
-
-We hover the mouse over Ryu, and he shifts to his ready pose. 
-
-We stop hovering over Ryu, and he goes back to standing still. 
-
-
-Hadouken: We should listen for click events and initiate the Hadouken sequence in response.  There’s a mousedown and mouseup component to this sequence.  We’ll have to not only swap in the right Ryu image; we’ll also have to load the (appropriately positioned) Hadouken image.  We’ll also have to figure out how to play our Hadouken sound effect.
-
-
-We click on Ryu, and he leans forward and throws a Hadouken. 
-
-He remains in that pose until we release our click, which causes Ryu to return to his ready pose. 
-
-
-We should list for “x” for keydown (and keyup) events on Ryu and respond with our looking cool sequence...
-
-When we hit the “x” key, Ryu assumes his looking cool pose, and 
-
-when we release “x”, he returns to his ready pose. -->
 
 </html>
