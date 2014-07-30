@@ -1,4 +1,6 @@
-
+/** {
+	outline: 1px solid red;
+}*/
 
 body {
 	background-color: black;
@@ -51,4 +53,5 @@ body {
 	left: -212px;
 	right: 0;
 	top: 167px;
+	/*z-index: 1000px;*/
 }
