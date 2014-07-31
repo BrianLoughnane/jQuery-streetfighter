@@ -7,10 +7,12 @@ $(document).ready(function() {
 	})
 	.on("mouseleave", function() {
 		$(".ryu-ready").hide();
+		$(".ryu-throwing").hide();
 		$(".ryu-still").show();
 	})
 	.on("mousedown", function() {
 		playHadouken();
+		$(".ryu-still").hide();
 		$(".ryu-ready").hide();
 		$(".ryu-throwing").show();
 		$(".hadouken").finish().show()
