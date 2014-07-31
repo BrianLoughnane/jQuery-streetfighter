@@ -43,7 +43,21 @@ body {
 	background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.chun {
+	background-image: url('../images/chun.gif');
+}
+
+.chun {
+	width: 100%;
+	height: 1000px;
+	float: left;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	display: none;
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .chun {
 	background-repeat: no-repeat;
 }
 
