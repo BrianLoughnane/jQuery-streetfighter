@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	function playHadouken() {
+	$("#hadouken-sound")[0].volume = 0.5;
+	$("#hadouken-sound")[0].load();
+	$("#hadouken-sound")[0].play();
+	}
+
+	function playLmfao() {
+		$("#lmfao-sound")[0].volume = 0.5;
+		$("#lmfao-sound")[0].load();
+		$("#lmfao-sound")[0].play();
+
+	}
+
+	function pauseLmfao() {
+		$("#lmfao-sound")[0].pause();
+		$("#lmfao-sound")[0].load();
+	}
+
 	$(".ryu")
 	.on("mouseenter", function() {
 		$(".action").hide();
@@ -43,8 +61,11 @@ $(document).ready(function() {
 	function(event) {
 		if( event.which === 88) {
 			console.log("Keydown");
+
 			$(".action").hide();
 			$(".ryu-cool").show();
+			// playLmfao();
+			$("#lmfao-sound")[0].play();
 		};
 	})
 	.on(
@@ -52,6 +73,7 @@ $(document).ready(function() {
 	function(event) {
 		if(event.which === 88) {
 			console.log("keyup");
+			pauseLmfao();
 			$(".action").hide();
 			$(".ryu-still").show();
 		}
@@ -61,8 +83,3 @@ $(document).ready(function() {
 
 });
 
-function playHadouken() {
-	$("#hadouken-sound")[0].volume = 0.5;
-	$("#hadouken-sound")[0].load();
-	$("#hadouken-sound")[0].play();
-}
